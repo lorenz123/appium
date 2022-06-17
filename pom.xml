@@ -28,7 +28,6 @@
             <artifactId>java-client</artifactId>
             <version>${appium.web.driver.version}</version>
         </dependency>
-
     </dependencies>
 
 
