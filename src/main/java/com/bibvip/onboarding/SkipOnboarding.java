@@ -1,4 +1,4 @@
-package com.bibvip;
+package com.bibvip.onboarding;
 
 import com.bibvip.consts.ElementType;
 import org.openqa.selenium.WebElement;

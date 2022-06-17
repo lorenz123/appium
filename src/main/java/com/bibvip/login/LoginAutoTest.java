@@ -1,11 +1,9 @@
-package com.bibvip;
+package com.bibvip.login;
 
 import com.bibvip.consts.ElementType;
 import org.openqa.selenium.WebElement;
-import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 
-import static com.bibvip.BibTest.driver;
 import static com.bibvip.utility.AppUtil.getBy;
 import static com.bibvip.utility.ThinkingTimeUtil.getElementWithPolling;
 import static com.bibvip.utility.mobile.MobileGenerator.getMobileNumber;
