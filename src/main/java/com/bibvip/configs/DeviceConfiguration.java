@@ -1,6 +1,11 @@
 package com.bibvip.configs;
 
+import com.bibvip.variables.AppActivities;
+import com.bibvip.variables.AppPackage;
 import org.openqa.selenium.remote.DesiredCapabilities;
+
+import static com.bibvip.variables.AppActivities.SPLASH_ACTIVITY;
+import static com.bibvip.variables.AppPackage.APP_PACKAGE;
 
 public class DeviceConfiguration {
 
@@ -19,8 +24,9 @@ public class DeviceConfiguration {
         cap.setCapability("appWaitDuration", 5000);
 
 //app package and first activity to open
-        cap.setCapability("appPackage", "com.dc.bib");
-        cap.setCapability("appActivity", "com.dc.bib.app.SplashActivity");
+        cap.setCapability("appPackage", APP_PACKAGE);
+        cap.setCapability("appActivity", SPLASH_ACTIVITY);
+
         return cap;
     }
 
