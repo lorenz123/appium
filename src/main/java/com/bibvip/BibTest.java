@@ -1,5 +1,6 @@
 package com.bibvip;
 
+import com.bibvip.variables.UrlPort;
 import io.appium.java_client.AppiumDriver;
 import org.openqa.selenium.remote.DesiredCapabilities;
 import org.openqa.selenium.support.ui.WebDriverWait;
@@ -12,13 +13,13 @@ import static com.bibvip.configs.DriverConfiguration.getDriverConfig;
 import static com.bibvip.LoginAutoTest.doLoginAuto;
 import static com.bibvip.SkipOnboarding.clickOnboardingPopups;
 import static com.bibvip.utility.ThinkingTimeUtil.getWebDriverWait;
+import static com.bibvip.variables.UrlPort.URL_PORT;
 
 
 public class BibTest {
 
     static AppiumDriver driver;
-    //ACCESS MODIFIERS, public private protected, default
-    private static final String URL = "http://127.0.0.1:4723/wd/hub";
+
 
     public static void main(String[] args) {
         try {
@@ -33,7 +34,7 @@ public class BibTest {
     public static void performLogin() throws MalformedURLException {
 
         DesiredCapabilities cap = getDeviceConfiguration(); //device config
-        driver = getDriverConfig(cap, URL); //driver config
+        driver = getDriverConfig(cap, URL_PORT); //driver config
         WebDriverWait wait = getWebDriverWait(driver); //This should call once only because it's an expensive task
 
         //App launched
